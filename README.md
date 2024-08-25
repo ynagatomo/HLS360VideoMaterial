@@ -11,6 +11,8 @@ This visionOS app plays the streaming video on the surface of the sphere sky-dom
 
 ![Image](Assets/hls360bike.jpg)
 
+![Image](Assets/overview1600.jpg)
+
 ## Use your 360 videos
 
 1. Shoot 360 videos with your favorite capture device such as Theta, Insta 360. (I'm using Theta.)
