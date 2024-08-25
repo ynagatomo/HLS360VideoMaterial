@@ -9,14 +9,15 @@ import SwiftUI
 
 @main
 struct HLS360VideoMaterialApp: App {
-
     @State private var appModel = AppModel()
+    private let initialWindowSize: CGSize = CGSize(width: 800, height: 400)
 
     var body: some Scene {
         WindowGroup {
             ContentView()
                 .environment(appModel)
         }
+        .defaultSize(initialWindowSize)
 
         ImmersiveSpace(id: appModel.immersiveSpaceID) {
             ImmersiveView()

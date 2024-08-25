@@ -80,9 +80,9 @@
 		BAFA21D32C7ACAF400294913 /* hls360videomaterial */ = {
 			isa = PBXGroup;
 			children = (
+				BAFA21DC2C7ACB8F00294913 /* App */,
 				BAFA21DE2C7ACB9B00294913 /* AppModel */,
 				BAFA21DD2C7ACB9400294913 /* Views */,
-				BAFA21DC2C7ACB8F00294913 /* App */,
 				BAFA21CB2C7ACAF400294913 /* Preview Content */,
 				BAFA21CD2C7ACAF400294913 /* Assets.xcassets */,
 				BAFA21D12C7ACAF400294913 /* Info.plist */,
