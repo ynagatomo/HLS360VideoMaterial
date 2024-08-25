@@ -14,10 +14,11 @@ struct ImmersiveView: View {
 
     var body: some View {
         RealityView { content in
-            let mesh = MeshResource.generateSphere(radius: 10.0)
+            let mesh = MeshResource.generateSphere(radius: 1.0)
 
-//            let url = URL(string: "https://satoshi0212.github.io/hls/resources/index.m3u8")!
-            let url = URL(string: "https://github.com/ynagatomo/HLS360VideoMaterial/contents/bike/prog_index.m3u8")!
+            // This sample HLS video is hosted by GitHub Pages as a HTTP server, just for testing.
+            let url = URL(string: "https://ynagatomo.github.io/HLS360VideoMaterial/contents/bike/prog_index.m3u8")!
+
             let playerItem = AVPlayerItem(url: url)
             let player = AVQueuePlayer()
             playerLooper = AVPlayerLooper(player: player, templateItem: playerItem)
@@ -25,6 +26,7 @@ struct ImmersiveView: View {
             let entity = ModelEntity(mesh: mesh, materials: [material])
             entity.position = [0, 1.5, -1.5]
             entity.scale = [-1, 1, 1]
+            entity.orientation = simd_quatf(angle: Float.pi / 2.0, axis: [0, 1, 0])
             content.add(entity)
 
             player.play()

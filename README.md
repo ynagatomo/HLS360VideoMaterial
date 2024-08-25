@@ -5,8 +5,11 @@ A sample project that shows how to use a video material with a HTTP Live Streami
 - Build: Xcode 16.0 beta 6, macOS 15.1 beta
 - Target: visionOS 2.0+ (Device or Simulator)
 
+The sample 360 video was captured with the Theta 360 camera and converted to HLS format with Apple HLS tool.
+The HLS files are hosted by GitHub Pages as a HTTP server.
+This visionOS app plays the streaming video on the surface of the sphere sky-dome.
 
-
+![Image](assets/hls360bike.jpg)
 
 ## Use your 360 videos
 
@@ -49,10 +52,6 @@ let url = URL(string: "https://your_http_server/prog_index.m3u8")!
 ```
 
 <!--
-![Image](assets/ss01.jpg)
--->
-
-<!--
 ![Gif](assets/mv720pshort.gif)
 
 Examples:
@@ -61,9 +60,8 @@ Examples:
 ![Image](Assets/ss02.jpg)
 -->
 
-## Materials
-
 <!--
+## Materials
 - HDRI: Oliksiy Yakovlyev, Artist Workshop [Poly Heaven](https://polyhaven.com/a/artist_workshop) 
 - Rock Texture Image: Granite 5 PBR Material [Free PBR](https://freepbr.com/materials/granite-5-pbr/)
 - Grass illustration: Garden Grass Collection [Designed by Freepik](http://www.freepik.com)
