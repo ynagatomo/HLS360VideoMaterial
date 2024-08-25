@@ -1,0 +1,432 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BAFA21B22C7AC9CE00294913 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = BAFA21B12C7AC9CE00294913 /* RealityKitContent */; };
+		BAFA21D42C7ACAF400294913 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFA21CC2C7ACAF400294913 /* AppModel.swift */; };
+		BAFA21D52C7ACAF400294913 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFA21CE2C7ACAF400294913 /* ContentView.swift */; };
+		BAFA21D62C7ACAF400294913 /* hls360videomaterialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFA21CF2C7ACAF400294913 /* hls360videomaterialApp.swift */; };
+		BAFA21D72C7ACAF400294913 /* ImmersiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFA21D02C7ACAF400294913 /* ImmersiveView.swift */; };
+		BAFA21D82C7ACAF400294913 /* ToggleImmersiveSpaceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFA21D22C7ACAF400294913 /* ToggleImmersiveSpaceButton.swift */; };
+		BAFA21D92C7ACAF400294913 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAFA21CA2C7ACAF400294913 /* Preview Assets.xcassets */; };
+		BAFA21DA2C7ACAF400294913 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAFA21CD2C7ACAF400294913 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BAFA21AC2C7AC9CE00294913 /* hls360videomaterial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hls360videomaterial.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAFA21B02C7AC9CE00294913 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
+		BAFA21CA2C7ACAF400294913 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BAFA21CC2C7ACAF400294913 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		BAFA21CD2C7ACAF400294913 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BAFA21CE2C7ACAF400294913 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BAFA21CF2C7ACAF400294913 /* hls360videomaterialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hls360videomaterialApp.swift; sourceTree = "<group>"; };
+		BAFA21D02C7ACAF400294913 /* ImmersiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImmersiveView.swift; sourceTree = "<group>"; };
+		BAFA21D12C7ACAF400294913 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAFA21D22C7ACAF400294913 /* ToggleImmersiveSpaceButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleImmersiveSpaceButton.swift; sourceTree = "<group>"; };
+		BAFA21DF2C7AD0B800294913 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BAFA21A92C7AC9CE00294913 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAFA21B22C7AC9CE00294913 /* RealityKitContent in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BAFA21A32C7AC9CE00294913 = {
+			isa = PBXGroup;
+			children = (
+				BAFA21DF2C7AD0B800294913 /* README.md */,
+				BAFA21D32C7ACAF400294913 /* hls360videomaterial */,
+				BAFA21AF2C7AC9CE00294913 /* Packages */,
+				BAFA21AD2C7AC9CE00294913 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BAFA21AD2C7AC9CE00294913 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BAFA21AC2C7AC9CE00294913 /* hls360videomaterial.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BAFA21AF2C7AC9CE00294913 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				BAFA21B02C7AC9CE00294913 /* RealityKitContent */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		BAFA21CB2C7ACAF400294913 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BAFA21CA2C7ACAF400294913 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BAFA21D32C7ACAF400294913 /* hls360videomaterial */ = {
+			isa = PBXGroup;
+			children = (
+				BAFA21DE2C7ACB9B00294913 /* AppModel */,
+				BAFA21DD2C7ACB9400294913 /* Views */,
+				BAFA21DC2C7ACB8F00294913 /* App */,
+				BAFA21CB2C7ACAF400294913 /* Preview Content */,
+				BAFA21CD2C7ACAF400294913 /* Assets.xcassets */,
+				BAFA21D12C7ACAF400294913 /* Info.plist */,
+			);
+			path = hls360videomaterial;
+			sourceTree = "<group>";
+		};
+		BAFA21DC2C7ACB8F00294913 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				BAFA21CF2C7ACAF400294913 /* hls360videomaterialApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		BAFA21DD2C7ACB9400294913 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BAFA21CE2C7ACAF400294913 /* ContentView.swift */,
+				BAFA21D02C7ACAF400294913 /* ImmersiveView.swift */,
+				BAFA21D22C7ACAF400294913 /* ToggleImmersiveSpaceButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BAFA21DE2C7ACB9B00294913 /* AppModel */ = {
+			isa = PBXGroup;
+			children = (
+				BAFA21CC2C7ACAF400294913 /* AppModel.swift */,
+			);
+			path = AppModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BAFA21AB2C7AC9CE00294913 /* hls360videomaterial */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAFA21C42C7AC9D000294913 /* Build configuration list for PBXNativeTarget "hls360videomaterial" */;
+			buildPhases = (
+				BAFA21A82C7AC9CE00294913 /* Sources */,
+				BAFA21A92C7AC9CE00294913 /* Frameworks */,
+				BAFA21AA2C7AC9CE00294913 /* Resources */,
+				BAFA21C92C7ACA3500294913 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = hls360videomaterial;
+			packageProductDependencies = (
+				BAFA21B12C7AC9CE00294913 /* RealityKitContent */,
+			);
+			productName = hls360videomaterial;
+			productReference = BAFA21AC2C7AC9CE00294913 /* hls360videomaterial.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BAFA21A42C7AC9CE00294913 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					BAFA21AB2C7AC9CE00294913 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = BAFA21A72C7AC9CE00294913 /* Build configuration list for PBXProject "hls360videomaterial" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BAFA21A32C7AC9CE00294913;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = BAFA21AD2C7AC9CE00294913 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BAFA21AB2C7AC9CE00294913 /* hls360videomaterial */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BAFA21AA2C7AC9CE00294913 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAFA21D92C7ACAF400294913 /* Preview Assets.xcassets in Resources */,
+				BAFA21DA2C7ACAF400294913 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BAFA21C92C7ACA3500294913 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Adds support for Apple Silicon brew directory\nexport PATH=\"$PATH:/opt/homebrew/bin\"\n\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed.\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BAFA21A82C7AC9CE00294913 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAFA21D42C7ACAF400294913 /* AppModel.swift in Sources */,
+				BAFA21D52C7ACAF400294913 /* ContentView.swift in Sources */,
+				BAFA21D62C7ACAF400294913 /* hls360videomaterialApp.swift in Sources */,
+				BAFA21D72C7ACAF400294913 /* ImmersiveView.swift in Sources */,
+				BAFA21D82C7ACAF400294913 /* ToggleImmersiveSpaceButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BAFA21C52C7AC9D000294913 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"hls360videomaterial/Preview Content\"";
+				DEVELOPMENT_TEAM = J5CY9Q9UP5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "HLS 360 Video Material";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.atarayosd.hls360videomaterial;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 7;
+			};
+			name = Debug;
+		};
+		BAFA21C62C7AC9D000294913 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"hls360videomaterial/Preview Content\"";
+				DEVELOPMENT_TEAM = J5CY9Q9UP5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "HLS 360 Video Material";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.atarayosd.hls360videomaterial;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 7;
+			};
+			name = Release;
+		};
+		BAFA21C72C7AC9D000294913 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = xros;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				XROS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		BAFA21C82C7AC9D000294913 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = xros;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+				XROS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BAFA21A72C7AC9CE00294913 /* Build configuration list for PBXProject "hls360videomaterial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAFA21C72C7AC9D000294913 /* Debug */,
+				BAFA21C82C7AC9D000294913 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAFA21C42C7AC9D000294913 /* Build configuration list for PBXNativeTarget "hls360videomaterial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAFA21C52C7AC9D000294913 /* Debug */,
+				BAFA21C62C7AC9D000294913 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BAFA21B12C7AC9CE00294913 /* RealityKitContent */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RealityKitContent;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = BAFA21A42C7AC9CE00294913 /* Project object */;
+}
