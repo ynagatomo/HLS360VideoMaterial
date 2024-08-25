@@ -9,7 +9,7 @@ The sample 360 video was captured with the Theta 360 camera and converted to HLS
 The HLS files are hosted by GitHub Pages as a HTTP server.
 This visionOS app plays the streaming video on the surface of the sphere sky-dome.
 
-![Image](assets/hls360bike.jpg)
+![Image](Assets/hls360bike.jpg)
 
 ## Use your 360 videos
 
