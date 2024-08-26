@@ -18,6 +18,8 @@ struct ImmersiveView: View {
 
             // This sample HLS video is hosted by GitHub Pages as a HTTP server, just for testing.
             let url = URL(string: "https://ynagatomo.github.io/HLS360VideoMaterial/contents/bike/prog_index.m3u8")!
+            // When using local http server, specify the url like below.
+            // let url = URL(string: "http://192.168.11.25/bike360/prog_index.m3u8")!
 
             let playerItem = AVPlayerItem(url: url)
             let player = AVQueuePlayer()

@@ -53,21 +53,73 @@ Place the files in the `output` folder on any HTTP server.
 let url = URL(string: "https://your_http_server/prog_index.m3u8")!
 ```
 
-<!--
-![Gif](assets/mv720pshort.gif)
+## Use Local HTTP Server on macOS
 
-Examples:
-1. <img src="assets/ex01.png" width=80 /> [Basic] Color Ball
+You may have many 360 videos of skiing, snowboarding, biking, scuba diving, etc.
 
-![Image](Assets/ss02.jpg)
--->
+By running your Mac as an HTTP Server and streaming contents from your Mac to AVP,
+you can easily enjoy them at home without copying files.
 
-<!--
-## Materials
-- HDRI: Oliksiy Yakovlyev, Artist Workshop [Poly Heaven](https://polyhaven.com/a/artist_workshop) 
-- Rock Texture Image: Granite 5 PBR Material [Free PBR](https://freepbr.com/materials/granite-5-pbr/)
-- Grass illustration: Garden Grass Collection [Designed by Freepik](http://www.freepik.com)
--->
+### Check the HTTP Server on macOS
+
+The macOS has an Apache HTTP Server (httpd) by default.
+You can server several files in the document root folder.
+
+```bash
+% which httpd                         # Existence confirmation
+/usr/sbin/httpd                       # - httpd: Apache http server
+% which apachectl                     # Existence confirmation
+/usr/sbin/apachectl                   # - apachectl: Control program
+% /usr/sbin/httpd -version            # Check httpd Version
+Server version: Apache/2.4.59 (Unix)
+Server built:   Jul 31 2024 04:12:39
+% cat /etc/apache2/httpd.conf | grep DocumentRoot    # Check the document root
+ :
+DocumentRoot "/Library/WebServer/Documents"          # /Library/WebServer/Documents
+ :
+```
+
+### Allow HTTPD Full Disk Access
+
+You need to assign the `Full Disk Access` privilege to `httpd`, to handle files in the document root folder.
+
+1. With Finder, `Go` to `/usr` folder, and select `sbin` folder. With menu: `File` - `Make Alias`. Then, an alias to `/usr/sbin` will be created in Desktop.
+2. With System Settings, `Privacy & Security` - `Full Disk Access`, tap the `+` button, double click the `sbin` alias in the Desktop and select `httpd` in the sbin folder. Then `httpd` will be added to the Full Disk Access list.
+
+### Copy HLS Files into the Document Root Folder
+
+1. Copy your 360 HLS video folders (/files) into the document root folder (`/Library/WebServer/Documents`).
+2. With Finder, select the each folders and `Cmd+I` to open the Info panel and expand `Sharing & Permissions` and change `everyone`: `No Access` to `Read only`.
+
+### Start the HTTP Server
+
+Start the http server with below command.
+
+```bash
+% sudo /usr/sbin/apachectl start     # Start HTTP Server
+```
+
+Use below command when you'd like to stop it.
+
+```bash
+% sudo /usr/sbin/apachectl stop     # Stop HTTP Server
+```
+
+### Find IP address of the Mac
+
+Find the IP address of the Mac running the HTTP server. Use `ifconfig` command with Terminal or see System Settings - Network - {Adaptor} - [Detail], `TCP/IP` tab - IP Address. You will find something like this, '192.168.11.13'.
+
+For the test purpose, you can access the URL with Safari on macOS, and the streaming content will be shown.
+
+### Change URL in the `ImmersiveView.swift` to your content's URL.
+
+```swift
+let url = URL(string: "http://your_ip_address/your_folder/prog_index.m3u8")!
+```
+
+Try improving this sample app and adding a UI that allows you to select and play a video from an HTTP-served video library.
+
+
 
 ## References
 
