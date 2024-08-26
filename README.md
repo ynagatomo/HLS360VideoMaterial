@@ -17,7 +17,7 @@ This visionOS app plays the streaming video on the surface of the sphere sky-dom
 
 1. Shoot 360 videos with your favorite capture device such as Theta, Insta 360. (I'm using Theta.)
 1. Convert mov/mp4/m4v files you captured to HLS format files, using Apple HLS Tool, Media File Segmenter.
-    - You need to install the Apple HLS Tools. See the Apple HTTP Live Streaming page [Web](https://developer.apple.com/streaming/).
+    - You need to install the Apple HLS Tools. See the Apple HTTP Live Streaming page [Web](https://developer.apple.com/streaming/)
 1. Store the HLS files on any HTTP server.
 1. Change the URL of your HTTP server in the ImmersiveView.swift.
 
@@ -41,7 +41,7 @@ Media File Segmenter:
 
 <blockquote>
 Media File Segmenter (mediafilesegmenter) divides a transport stream input or file — such as an MOV, MP4, M4V, M4A, or MP3 — into media segments, creates a media playlist, and can also perform segment encryption. You can deploy the media playlist and media segments using almost any web server infrastructure for streaming to iOS, macOS, and tvOS. The Media File Segmenter only produces Video-on-Demand (VOD) streams.</blockquote>
-(Apple Article: [Using Apple’s HTTP Live Streaming (HLS) Tools](https://developer.apple.com/documentation/http-live-streaming/using-apple-s-http-live-streaming-hls-tools))
+* Apple Article: [Using Apple’s HTTP Live Streaming Tools](https://developer.apple.com/documentation/http-live-streaming/using-apple-s-http-live-streaming-hls-tools)
 
 ### Place HLS files on the server
 
@@ -59,6 +59,8 @@ You may have many 360 videos of skiing, snowboarding, biking, scuba diving, etc.
 
 By running your Mac as an HTTP Server and streaming contents from your Mac to AVP,
 you can easily enjoy them at home without copying files.
+
+![Image](Assets/localhttpd1600.jpg)
 
 ### Check the HTTP Server on macOS
 
@@ -109,12 +111,13 @@ Use below command when you'd like to stop it.
 
 Find the IP address of the Mac running the HTTP server. Use `ifconfig` command with Terminal or see System Settings - Network - {Adaptor} - [Detail], `TCP/IP` tab - IP Address. You will find something like this, '192.168.11.13'.
 
-For the test purpose, you can access the URL with Safari on macOS, and the streaming content will be shown.
+For testing purpose, you can access a URL with Safari on macOS, and the streaming content will be shown,
+`http://your_mac_ip_address/your_folder/prog_index.m3u8`
 
 ### Change URL in the `ImmersiveView.swift` to your content's URL.
 
 ```swift
-let url = URL(string: "http://your_ip_address/your_folder/prog_index.m3u8")!
+let url = URL(string: "http://your_mac_ip_address/your_folder/prog_index.m3u8")!
 ```
 
 Try improving this sample app and adding a UI that allows you to select and play a video from an HTTP-served video library.
